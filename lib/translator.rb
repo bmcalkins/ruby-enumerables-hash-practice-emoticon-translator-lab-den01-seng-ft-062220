@@ -17,6 +17,7 @@ end
 def get_japanese_emoticon(filename, emoticon)
   # code goes here
   hash = load_library(filename)
+  puts(hash)
   return hash[emoticon][:japanese]
 end
 
