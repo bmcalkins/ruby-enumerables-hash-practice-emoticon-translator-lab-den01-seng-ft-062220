@@ -22,6 +22,7 @@ end
 
 def get_english_meaning(filename, emoticon)
   hash = load_library(filename)
+  puts(hash)
   hash.each do |key, value|
     puts(hash[key]['japanese'])
     if value['japanese'] == emoticon
